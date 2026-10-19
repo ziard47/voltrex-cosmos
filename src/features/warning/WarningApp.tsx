@@ -2,7 +2,6 @@ import React, { useMemo } from 'react'
 import SecurityIcon from '@mui/icons-material/Security'
 import CircularProgress from '@mui/material/CircularProgress'
 import { ShieldLogo } from '@/components/common/ShieldLogo'
-import { MockNoticeBanner } from '@/components/common/MockNoticeBanner'
 import { ThreatHostCard } from './ThreatHostCard'
 import { IndicatorList } from './IndicatorList'
 import { SafetyActions } from './SafetyActions'
@@ -77,13 +76,10 @@ export const WarningApp: React.FC = () => {
             />
           </>
         ) : null}
-
-        {/* Phase 1 Mock Notice */}
-        <MockNoticeBanner />
       </div>
 
-      <footer className="text-center text-xs text-slate-500 pt-8 mt-4 border-t border-slate-900">
-        Voltrex Cosmos Security • Privacy-Preserving Client-Side Detection
+      <footer className="text-center text-xs text-slate-500 pt-8 mt-4 border-t border-slate-800/80">
+        Voltrex Cosmos Designed and Developed by Mohomed Ziard | Voltrex Digital
       </footer>
     </main>
   )

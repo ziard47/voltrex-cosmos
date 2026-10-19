@@ -37,7 +37,7 @@ export const CurrentDomainCard: React.FC<CurrentDomainCardProps> = ({
   return (
     <section
       aria-labelledby="active-domain-heading"
-      className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800/90 shadow-sm space-y-3"
+      className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-3"
     >
       <div className="flex items-center justify-between">
         <span
@@ -61,7 +61,7 @@ export const CurrentDomainCard: React.FC<CurrentDomainCardProps> = ({
       </div>
 
       {/* Explanation Box */}
-      <div className="text-xs text-slate-300 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/60 leading-relaxed">
+      <div className="text-xs text-slate-300 bg-slate-950/70 p-2.5 rounded-lg border border-slate-700/70 leading-relaxed">
         {isRestrictedTab ? (
           <p className="text-slate-400">
             Internal browser page. Lookalike and phishing checks are paused on system

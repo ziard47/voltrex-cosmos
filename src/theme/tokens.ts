@@ -4,8 +4,8 @@ export const cosmosTokens = {
     surface: '#0f172a',
     card: '#131f37',
     cardHover: '#182745',
-    cardBorder: '#1e293b',
-    borderSubtle: '#26354a',
+    cardBorder: '#334155',
+    borderSubtle: '#334155',
 
     // Accents
     indigo: '#6366f1',
@@ -33,9 +33,9 @@ export const cosmosTokens = {
   },
   shadows: {
     card: '0 4px 20px -2px rgba(0, 0, 0, 0.5)',
-    glowCyan: '0 0 20px -3px rgba(6, 182, 212, 0.25)',
-    glowRed: '0 0 24px -2px rgba(239, 68, 68, 0.35)',
-    glowAmber: '0 0 24px -2px rgba(245, 158, 11, 0.3)',
+    glowCyan: 'none',
+    glowRed: 'none',
+    glowAmber: 'none',
   },
   radii: {
     sm: '6px',

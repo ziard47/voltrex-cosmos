@@ -5,7 +5,6 @@ import Button from '@mui/material/Button'
 import { PopupHeader } from './PopupHeader'
 import { CurrentDomainCard } from './CurrentDomainCard'
 import { RecentDetectionsList } from './RecentDetectionsList'
-import { MockNoticeBanner } from '@/components/common/MockNoticeBanner'
 import { useSettings } from '@/hooks/useSettings'
 import { useActiveTab } from '@/hooks/useActiveTab'
 import { useDomainSecurity } from '@/hooks/useDomainSecurity'
@@ -44,7 +43,7 @@ export const PopupApp: React.FC = () => {
   const protectionEnabled = settings?.protectionEnabled ?? true
 
   return (
-    <div className="w-[360px] min-h-[480px] bg-cosmos-bg text-slate-100 p-4 flex flex-col justify-between font-sans select-none antialiased border border-slate-800">
+    <div className="w-[370px] min-h-[480px] bg-cosmos-bg text-slate-100 p-4 flex flex-col justify-between font-sans select-none antialiased border border-slate-700/80">
       <div className="space-y-3.5">
         <PopupHeader
           protectionEnabled={protectionEnabled}
@@ -67,10 +66,8 @@ export const PopupApp: React.FC = () => {
         />
       </div>
 
-      <div className="pt-3.5 mt-3 border-t border-slate-800/80 space-y-2">
-        <MockNoticeBanner compact />
-
-        <div className="flex items-center justify-between text-xs pt-1">
+      <div className="pt-3 mt-3 border-t border-slate-700/80 space-y-2">
+        <div className="flex items-center justify-between text-xs">
           <Button
             size="small"
             startIcon={<TuneIcon sx={{ fontSize: 14 }} />}
@@ -99,6 +96,10 @@ export const PopupApp: React.FC = () => {
             Warning Page Demo
           </Button>
         </div>
+
+        <footer className="text-[10px] text-center text-slate-500 pt-2 border-t border-slate-800/80 leading-normal">
+          Voltrex Cosmos Designed and Developed by Mohomed Ziard | Voltrex Digital
+        </footer>
       </div>
     </div>
   )

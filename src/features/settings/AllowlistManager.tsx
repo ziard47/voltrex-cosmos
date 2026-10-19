@@ -93,8 +93,8 @@ export const AllowlistManager: React.FC<AllowlistManagerProps> = ({
               color: '#f8fafc',
               fontSize: '13px',
               fontFamily: 'monospace',
-              '& fieldset': { borderColor: '#1e293b' },
-              '&:hover fieldset': { borderColor: '#334155' },
+              '& fieldset': { borderColor: '#334155' },
+              '&:hover fieldset': { borderColor: '#475569' },
               '&.Mui-focused fieldset': { borderColor: '#06b6d4' },
             },
           }}
@@ -118,7 +118,13 @@ export const AllowlistManager: React.FC<AllowlistManagerProps> = ({
             whiteSpace: 'nowrap',
             height: '40px',
             px: 2.5,
-            '&:hover': { backgroundColor: '#22d3ee' },
+            boxShadow: 'none',
+            '&:hover': { backgroundColor: '#22d3ee', boxShadow: 'none' },
+            '&.Mui-disabled': {
+              backgroundColor: '#1e293b',
+              color: '#64748b',
+              border: '1px solid #334155',
+            },
           }}
         >
           Add Domain
@@ -132,7 +138,7 @@ export const AllowlistManager: React.FC<AllowlistManagerProps> = ({
           description="Add domains you explicitly trust (such as local corporate intranets or staging subdomains)."
         />
       ) : (
-        <div className="rounded-xl bg-slate-900/80 border border-slate-800 divide-y divide-slate-800/80 max-h-60 overflow-y-auto">
+        <div className="rounded-xl bg-slate-900/80 border border-slate-700/80 divide-y divide-slate-800 max-h-60 overflow-y-auto">
           {allowlist.map((domain) => (
             <div
               key={domain}

@@ -90,7 +90,7 @@ export const cosmosMuiTheme = createTheme({
           color: '#080c16',
           '&:hover': {
             backgroundColor: cosmosTokens.colors.cyanBright,
-            boxShadow: cosmosTokens.shadows.glowCyan,
+            boxShadow: 'none',
           },
         },
       },

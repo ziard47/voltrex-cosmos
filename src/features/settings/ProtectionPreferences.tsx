@@ -22,7 +22,7 @@ export const ProtectionPreferences: React.FC<ProtectionPreferencesProps> = ({
 
       <div className="space-y-3">
         {/* Lookalike & Typosquat */}
-        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-4">
+        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 flex items-center justify-between gap-4">
           <div className="space-y-0.5">
             <span className="text-sm font-medium text-slate-100 block">
               Lookalike & Typosquatting Protection
@@ -40,7 +40,7 @@ export const ProtectionPreferences: React.FC<ProtectionPreferencesProps> = ({
         </div>
 
         {/* Punycode Homoglyph */}
-        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-4">
+        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 flex items-center justify-between gap-4">
           <div className="space-y-0.5">
             <span className="text-sm font-medium text-slate-100 block">
               Punycode & Homoglyph Spoof Detection
@@ -60,7 +60,7 @@ export const ProtectionPreferences: React.FC<ProtectionPreferencesProps> = ({
         </div>
 
         {/* Suspicious TLDs */}
-        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-4">
+        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 flex items-center justify-between gap-4">
           <div className="space-y-0.5">
             <span className="text-sm font-medium text-slate-100 block">
               Suspicious TLD & Entropy Warnings
@@ -78,7 +78,7 @@ export const ProtectionPreferences: React.FC<ProtectionPreferencesProps> = ({
         </div>
 
         {/* Automatic Interception */}
-        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-4">
+        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 flex items-center justify-between gap-4">
           <div className="space-y-0.5">
             <span className="text-sm font-medium text-slate-100 block">
               Automatic Malicious Site Warning Interception
@@ -98,7 +98,7 @@ export const ProtectionPreferences: React.FC<ProtectionPreferencesProps> = ({
         </div>
 
         {/* Warn on Suspicious */}
-        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-4">
+        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 flex items-center justify-between gap-4">
           <div className="space-y-0.5">
             <span className="text-sm font-medium text-slate-100 block">
               Warn on Suspicious Lookalikes
@@ -118,7 +118,7 @@ export const ProtectionPreferences: React.FC<ProtectionPreferencesProps> = ({
         </div>
 
         {/* Optional Threat Intelligence */}
-        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-4">
+        <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 flex items-center justify-between gap-4">
           <div className="space-y-0.5">
             <span className="text-sm font-medium text-slate-100 block">
               External Threat Intelligence Lookups (Optional)

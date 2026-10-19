@@ -38,7 +38,7 @@ export const ThreatIntelligenceCard: React.FC<ThreatIntelligenceCardProps> = ({
         />
       </div>
 
-      <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
+      <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-3 text-xs">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
           <div>
             <span className="text-slate-400 block">Active Provider</span>

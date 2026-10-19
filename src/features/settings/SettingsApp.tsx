@@ -3,12 +3,12 @@ import CircularProgress from '@mui/material/CircularProgress'
 import Alert from '@mui/material/Alert'
 import Snackbar from '@mui/material/Snackbar'
 import { ShieldLogo } from '@/components/common/ShieldLogo'
-import { MockNoticeBanner } from '@/components/common/MockNoticeBanner'
 import { ProtectionPreferences } from './ProtectionPreferences'
 import { SensitivitySelector } from './SensitivitySelector'
 import { AllowlistManager } from './AllowlistManager'
 import { ThreatIntelligenceCard } from './ThreatIntelligenceCard'
 import { PrivacyPolicyCard } from './PrivacyPolicyCard'
+import { AboutCard } from './AboutCard'
 import { useSettings } from '@/hooks/useSettings'
 import type { SensitivityLevel } from '@/types/settings'
 
@@ -49,8 +49,6 @@ export const SettingsApp: React.FC = () => {
             </p>
           </div>
         </div>
-
-        <MockNoticeBanner />
 
         {loading ? (
           <div className="p-16 text-center space-y-3">
@@ -93,11 +91,13 @@ export const SettingsApp: React.FC = () => {
             />
 
             <PrivacyPolicyCard />
+
+            <AboutCard />
           </div>
         ) : null}
 
-        <footer className="text-center text-xs text-slate-500 pt-8 border-t border-slate-900">
-          Voltrex Cosmos — Phase 1 Project Foundation
+        <footer className="text-center text-xs text-slate-500 pt-8 border-t border-slate-800/80">
+          Voltrex Cosmos Designed and Developed by Mohomed Ziard | Voltrex Digital
         </footer>
       </div>
 

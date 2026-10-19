@@ -308,7 +308,7 @@ export const mockDetectionService = {
       riskLevel: 'low_risk',
       riskScore: 12,
       statusExplanation:
-        'No known lookalike patterns or homoglyphs found in Phase 1 mock dataset. Caution: Not an official safety guarantee.',
+        'No deceptive lookalike patterns or confusable homoglyphs detected on this domain. Caution: Not an official safety guarantee.',
       indicators: [
         {
           id: 'ind-unverified',
@@ -316,7 +316,7 @@ export const mockDetectionService = {
           severity: 'info',
           title: 'Unverified Third-Party Website',
           description:
-            'Phase 1 foundation mode does not certify security. Always verify the address bar independently.',
+            'Standard internet property without verified brand credentials. Always verify sensitive logins independently.',
         },
       ],
       analyzedAt: new Date().toISOString(),

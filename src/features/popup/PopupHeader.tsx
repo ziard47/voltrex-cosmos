@@ -22,10 +22,10 @@ export const PopupHeader: React.FC<PopupHeaderProps> = ({
   }
 
   return (
-    <header className="flex items-center justify-between pb-3.5 border-b border-slate-800/80">
-      <ShieldLogo size={34} />
+    <header className="flex items-center justify-between pb-3.5 border-b border-slate-700/80 gap-2 select-none">
+      <ShieldLogo size={32} className="flex-shrink-0" />
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5 flex-shrink-0">
         <Tooltip
           title={
             protectionEnabled
@@ -34,13 +34,13 @@ export const PopupHeader: React.FC<PopupHeaderProps> = ({
           }
           arrow
         >
-          <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-900/90 border border-slate-800">
+          <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-900 border border-slate-700 flex-shrink-0">
             <span
-              className={`w-2 h-2 rounded-full ${
+              className={`w-2 h-2 rounded-full flex-shrink-0 ${
                 protectionEnabled ? 'bg-cyan-400' : 'bg-slate-500'
               }`}
             />
-            <span className="text-[11px] font-medium text-slate-300">
+            <span className="text-[11px] font-medium text-slate-300 whitespace-nowrap">
               {protectionEnabled ? 'Active' : 'Paused'}
             </span>
             <Switch
@@ -48,6 +48,7 @@ export const PopupHeader: React.FC<PopupHeaderProps> = ({
               checked={protectionEnabled}
               onChange={onToggleProtection}
               disabled={disabled}
+              sx={{ ml: 0.5 }}
               slotProps={{
                 input: { 'aria-label': 'Toggle Voltrex Cosmos real-time protection' },
               }}
@@ -62,12 +63,13 @@ export const PopupHeader: React.FC<PopupHeaderProps> = ({
             aria-label="Open extension settings"
             sx={{
               color: '#94a3b8',
-              backgroundColor: 'rgba(15, 23, 42, 0.6)',
-              border: '1px solid #1e293b',
+              backgroundColor: 'rgba(15, 23, 42, 0.8)',
+              border: '1px solid #334155',
+              p: '5px',
               '&:hover': {
                 color: '#22d3ee',
-                backgroundColor: 'rgba(30, 41, 59, 0.8)',
-                borderColor: '#334155',
+                backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                borderColor: '#06b6d4',
               },
             }}
           >

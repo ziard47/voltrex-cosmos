@@ -4,7 +4,7 @@ import { CosmosThemeProvider } from '@/theme/ThemeProvider'
 import { PopupApp } from './PopupApp'
 
 describe('PopupApp', () => {
-  it('renders branding, active site section, and mock notice', async () => {
+  it('renders branding, active site section, and footer credits', async () => {
     render(
       <CosmosThemeProvider>
         <PopupApp />
@@ -12,16 +12,18 @@ describe('PopupApp', () => {
     )
 
     // Check branding
-    expect(screen.getByText(/Voltrex/i)).toBeInTheDocument()
-    expect(screen.getByText(/Cosmos/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/Voltrex/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/Cosmos/i).length).toBeGreaterThan(0)
 
     // Check headings
     expect(screen.getByText(/Active Site Analysis/i)).toBeInTheDocument()
     expect(screen.getByText(/Recent Lookalikes/i)).toBeInTheDocument()
 
-    // Wait for mock domain check
+    // Check footer credits
     await waitFor(() => {
-      expect(screen.getByText(/Phase 1 Preview/i)).toBeInTheDocument()
+      expect(
+        screen.getByText(/Designed and Developed by Mohomed Ziard/i)
+      ).toBeInTheDocument()
     })
   })
 })

@@ -69,7 +69,7 @@ export const RecentDetectionsList: React.FC<RecentDetectionsListProps> = ({
               <button
                 type="button"
                 onClick={() => handleItemClick(item.hostname)}
-                className="w-full text-left p-2.5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-800/70 hover:bg-slate-800/50 transition-all flex items-center justify-between group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                className="w-full text-left p-2.5 rounded-lg bg-slate-900/80 border border-slate-700/80 hover:border-cyan-500/70 hover:bg-slate-800/60 transition-all flex items-center justify-between group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 cursor-pointer"
                 aria-label={`View security report for ${item.hostname}`}
               >
                 <div className="flex items-center gap-2 overflow-hidden pr-2">
@@ -91,7 +91,7 @@ export const RecentDetectionsList: React.FC<RecentDetectionsListProps> = ({
                 </div>
 
                 <div className="flex items-center gap-1.5 flex-shrink-0">
-                  <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">
+                  <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300 font-mono">
                     {item.indicatorCount} {item.indicatorCount === 1 ? 'flag' : 'flags'}
                   </span>
                   <RiskBadge riskLevel={item.riskLevel} size="sm" />

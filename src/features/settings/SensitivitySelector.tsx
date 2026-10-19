@@ -68,10 +68,10 @@ export const SensitivitySelector: React.FC<SensitivitySelectorProps> = ({
               key={opt.level}
               type="button"
               onClick={() => onChange(opt.level)}
-              className={`p-4 rounded-xl text-left border transition-all flex flex-col justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 ${
+              className={`p-4 rounded-xl text-left transition-all flex flex-col justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 cursor-pointer ${
                 isSelected
-                  ? 'bg-slate-900 border-cyan-500/80 shadow-shield-glow'
-                  : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
+                  ? 'bg-slate-900 border-2 border-cyan-400'
+                  : 'bg-slate-900/70 border border-slate-700/80 hover:border-slate-500'
               }`}
               aria-pressed={isSelected}
             >
@@ -79,7 +79,7 @@ export const SensitivitySelector: React.FC<SensitivitySelectorProps> = ({
                 <div className="flex items-center justify-between gap-2 mb-1.5">
                   <span
                     className={`text-sm font-semibold ${
-                      isSelected ? 'text-cyan-300' : 'text-slate-200'
+                      isSelected ? 'text-cyan-300' : 'text-slate-100'
                     }`}
                   >
                     {opt.title}
@@ -87,8 +87,8 @@ export const SensitivitySelector: React.FC<SensitivitySelectorProps> = ({
                   <span
                     className={`text-[10px] font-mono px-2 py-0.5 rounded-full ${
                       isSelected
-                        ? 'bg-cyan-950 text-cyan-300 border border-cyan-800'
-                        : 'bg-slate-800 text-slate-400'
+                        ? 'bg-cyan-950 text-cyan-300 border border-cyan-700'
+                        : 'bg-slate-800 text-slate-300 border border-slate-700'
                     }`}
                   >
                     {opt.badge}
@@ -99,7 +99,7 @@ export const SensitivitySelector: React.FC<SensitivitySelectorProps> = ({
                 </p>
               </div>
 
-              <div className="pt-3 mt-3 border-t border-slate-800/80 text-[11px] text-slate-500 italic">
+              <div className="pt-3 mt-3 border-t border-slate-700/60 text-[11px] text-slate-400 italic">
                 {opt.tradeoff}
               </div>
             </button>

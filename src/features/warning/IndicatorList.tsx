@@ -13,7 +13,7 @@ export const IndicatorList: React.FC<IndicatorListProps> = ({ indicators }) => {
   if (indicators.length === 0) {
     return (
       <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-400">
-        No specific technical indicators were returned by mock heuristics.
+        No specific technical indicators were flagged.
       </div>
     )
   }
@@ -92,7 +92,7 @@ export const IndicatorList: React.FC<IndicatorListProps> = ({ indicators }) => {
         {indicators.map((ind) => (
           <div
             key={ind.id}
-            className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition-colors flex items-start gap-3"
+            className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 hover:border-slate-500/80 transition-colors flex items-start gap-3"
           >
             <div className="mt-0.5">{getCategoryIcon(ind.severity)}</div>
 
@@ -110,7 +110,7 @@ export const IndicatorList: React.FC<IndicatorListProps> = ({ indicators }) => {
 
               {ind.detectedValue && (
                 <div className="pt-1">
-                  <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-cyan-300 inline-block">
+                  <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 border border-slate-700 text-cyan-300 inline-block">
                     {ind.detectedValue}
                   </span>
                 </div>

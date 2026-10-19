@@ -15,7 +15,7 @@ export const PrivacyPolicyCard: React.FC = () => {
         </h2>
       </div>
 
-      <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
+      <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-3 text-xs">
         <p className="text-slate-300 leading-relaxed font-medium">
           Voltrex Cosmos is engineered with a strict privacy-by-design architecture:
         </p>

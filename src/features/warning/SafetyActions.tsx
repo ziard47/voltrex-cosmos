@@ -92,7 +92,7 @@ export const SafetyActions: React.FC<SafetyActionsProps> = ({
             flex: 1,
             '&:hover': {
               backgroundColor: '#22d3ee',
-              boxShadow: '0 0 20px rgba(6, 182, 212, 0.4)',
+              boxShadow: 'none',
             },
           }}
         >
@@ -110,9 +110,11 @@ export const SafetyActions: React.FC<SafetyActionsProps> = ({
             fontWeight: 600,
             fontSize: '13px',
             py: '10px',
+            boxShadow: 'none',
             '&:hover': {
               borderColor: '#06b6d4',
               backgroundColor: 'rgba(6, 182, 212, 0.08)',
+              boxShadow: 'none',
             },
           }}
         >
@@ -121,12 +123,12 @@ export const SafetyActions: React.FC<SafetyActionsProps> = ({
       </div>
 
       {/* Advanced Secondary Controls */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-2 pt-2 border-t border-slate-800/80 text-xs text-slate-400">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-2 pt-3 border-t border-slate-800/80 text-xs text-slate-400">
         <button
           type="button"
           onClick={handleAddToAllowlist}
           disabled={allowlisted}
-          className="inline-flex items-center gap-1.5 text-slate-400 hover:text-cyan-300 transition-colors focus-visible:outline-none focus-visible:underline"
+          className="inline-flex items-center gap-1.5 bg-transparent border-0 p-0 text-xs text-slate-400 hover:text-cyan-300 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer transition-colors focus-visible:outline-none focus-visible:underline"
         >
           <AddModeratorIcon sx={{ fontSize: 16 }} />
           <span>
@@ -139,7 +141,7 @@ export const SafetyActions: React.FC<SafetyActionsProps> = ({
         <button
           type="button"
           onClick={() => setShowOverrideDialog(true)}
-          className="text-slate-500 hover:text-red-400 transition-colors focus-visible:outline-none focus-visible:underline"
+          className="bg-transparent border-0 p-0 text-xs text-slate-500 hover:text-red-400 cursor-pointer transition-colors focus-visible:outline-none focus-visible:underline"
         >
           Proceed to unsafe site anyway (Not recommended)
         </button>

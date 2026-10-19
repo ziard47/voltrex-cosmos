@@ -12,7 +12,9 @@ export const ShieldLogo: React.FC<ShieldLogoProps> = ({
   className = '',
 }) => {
   return (
-    <div className={`flex items-center gap-2.5 select-none ${className}`}>
+    <div
+      className={`flex items-center gap-2.5 select-none whitespace-nowrap flex-shrink-0 ${className}`}
+    >
       <svg
         width={size}
         height={size}
@@ -80,11 +82,11 @@ export const ShieldLogo: React.FC<ShieldLogoProps> = ({
       </svg>
 
       {showText && (
-        <div className="flex flex-col leading-tight">
-          <span className="font-bold text-sm tracking-wide text-white uppercase font-sans">
+        <div className="flex flex-col leading-tight whitespace-nowrap">
+          <span className="font-bold text-sm tracking-wide text-white uppercase font-sans whitespace-nowrap">
             Voltrex <span className="text-cyan-400 font-semibold">Cosmos</span>
           </span>
-          <span className="text-[10px] tracking-wider text-slate-400 font-mono">
+          <span className="text-[10px] tracking-wider text-slate-400 font-mono whitespace-nowrap">
             PHISHING SHIELD
           </span>
         </div>
