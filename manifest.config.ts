@@ -7,13 +7,19 @@ export default defineManifest({
   description: pkg.description,
   version: pkg.version,
   icons: {
-    48: 'public/logo.png',
+    16: 'public/logo-16.png',
+    32: 'public/logo-32.png',
+    48: 'public/logo-48.png',
+    128: 'public/logo-128.png',
   },
   permissions: ['storage', 'activeTab', 'webNavigation', 'tabs'],
   action: {
     default_title: 'Voltrex Cosmos Protection',
     default_icon: {
-      48: 'public/logo.png',
+      16: 'public/logo-16.png',
+      32: 'public/logo-32.png',
+      48: 'public/logo-48.png',
+      128: 'public/logo-128.png',
     },
     default_popup: 'src/popup/index.html',
   },
