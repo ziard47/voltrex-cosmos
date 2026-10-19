@@ -3,6 +3,7 @@ import CloudSyncOutlinedIcon from '@mui/icons-material/CloudSyncOutlined'
 import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined'
 import Chip from '@mui/material/Chip'
 import type { ThreatFeedStatus } from '@/types/settings'
+import { CATALOG_VERSION, OFFICIAL_BRANDS } from '@/engine/brands/officialCatalog'
 
 interface ThreatIntelligenceCardProps {
   status: ThreatFeedStatus
@@ -51,7 +52,8 @@ export const ThreatIntelligenceCard: React.FC<ThreatIntelligenceCardProps> = ({
           <div>
             <span className="text-slate-400 block">Catalog Version</span>
             <span className="font-mono text-slate-300 mt-0.5 block">
-              v2.0.0 (Updated {new Date(lastUpdated).toLocaleDateString()})
+              v{CATALOG_VERSION} ({OFFICIAL_BRANDS.length} Major Authorities • Updated{' '}
+              {new Date(lastUpdated).toLocaleDateString()})
             </span>
           </div>
         </div>

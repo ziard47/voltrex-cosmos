@@ -39,3 +39,30 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080c16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 1px solid #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+  border-color: #22d3ee;
+}
+
+/* Firefox standard scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #080c16;
+}

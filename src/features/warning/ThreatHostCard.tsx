@@ -29,14 +29,14 @@ export const ThreatHostCard: React.FC<ThreatHostCardProps> = ({ analysis }) => {
     <div className="p-5 sm:p-6 rounded-2xl bg-slate-900/90 border border-red-500/40 space-y-4">
       {/* Top Header Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-shrink-0">
           <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse flex-shrink-0" />
-          <span className="text-xs font-mono font-bold text-red-400 uppercase tracking-wider">
+          <span className="text-xs font-mono font-bold text-red-400 uppercase tracking-wider whitespace-nowrap">
             Flagged Suspicious Domain
           </span>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center justify-end sm:justify-end gap-2 sm:ml-auto">
           {analysis.targetBrand && (
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/70 border border-cyan-500/50 text-xs font-mono text-cyan-300">
               <CompareArrowsIcon sx={{ fontSize: 16 }} />
